@@ -177,5 +177,17 @@ return {
     },
     enabled=true
   },
+  ["workshop-595764362"] = {
+    enabled = true,
+    configuration_options = {
+      ["Connections"] = {
+            ["1"] = { "11", "12" }, -- bidiractional between 1-11 and 1-12
+        ["11"] = { "12" } -- bidirectional between 11-12
+      },
+      ["OneWayConnections"] = {
+        ["1"] = { "12", "12" } -- two unidirectional connections from 1 to 12
+      }
+    }
+  },
   ["workshop-679636739"]={ configuration_options={  }, enabled=true }
 }

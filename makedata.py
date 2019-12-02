@@ -41,7 +41,7 @@ console_enabled = true
 shard_enabled = true
 bind_ip = 127.0.0.1
 master_ip = 127.0.0.1
-master_port = 10888
+master_port = 10999
 cluster_key = defaultPass
 '''
 
