@@ -6,7 +6,7 @@ import re
 
 service_format = '''
  {name}:
-    image: thoxvi/dont-starve-together-docker-cluster:latest
+    build: .
     ports:
       - "10999:10999/udp"
       - "10998:10998/udp"
@@ -38,7 +38,7 @@ cluster_password = {passwd}
 console_enabled = true
 
 [SHARD]
-shard_enabled = true
+shard_enabled = false
 bind_ip = 127.0.0.1
 master_ip = 127.0.0.1
 master_port = 10888
@@ -80,6 +80,7 @@ for info in infos:
     path_data_name = path_data + '/' + name
     path_mods_name = path_data + '/' + 'mods'
     os.system("cd " + path)
+    os.system('cp -rf dockerfile/* ' + path_data)
     os.system('cp -rf template ' + path_data_name)
     os.system('cp -rf mods ' + path_mods_name)
     with open(path_data_name + "/cluster_token.txt", 'w') as f:
