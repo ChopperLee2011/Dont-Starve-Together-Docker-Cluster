@@ -99,9 +99,6 @@ docker-compose up
 - [Auto Actions - Full client mod](http://steamcommunity.com/sharedfiles/filedetails/?id=651419070)
 - [Craft Pot](https://steamcommunity.com/sharedfiles/filedetails/?id=727774324)
 
-## 问题
-- [ ] DST服务器自动安装更新mod
-
 ## Path[Mac]
 
 - Server Config: `~/Documents/Klei/DoNotStarveTogether/`

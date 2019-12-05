@@ -6,7 +6,7 @@ import re
 
 service_format = '''
  {name}:
-    build: .
+    image: makarawang/dont-starve-together-docker-cluster
     ports:
       - "10999:10999/udp"
       - "10998:10998/udp"
@@ -80,7 +80,6 @@ for info in infos:
     path_data_name = path_data + '/' + name
     path_mods_name = path_data + '/' + 'mods'
     os.system("cd " + path)
-    os.system('cp -rf dockerfile/* ' + path_data)
     os.system('cp -rf template ' + path_data_name)
     os.system('cp -rf mods ' + path_mods_name)
     with open(path_data_name + "/cluster_token.txt", 'w') as f:
